@@ -1,1 +1,5 @@
 django-money
+django-filter
+djangorestframework
+django-allauth
+django_extensions
