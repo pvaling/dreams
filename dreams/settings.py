@@ -41,12 +41,14 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    # 'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
     # 'allauth.socialaccount.providers.instagram',
     # 'allauth.socialaccount.providers.vk',
     'core',
-    'django_extensions'
+    'rest_api',
+    'django_extensions',
+    'sslserver'
 ]
 
 SITE_ID = 1

@@ -3,3 +3,4 @@ django-filter
 djangorestframework
 django-allauth
 django_extensions
+django-sslserver

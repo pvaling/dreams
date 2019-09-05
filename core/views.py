@@ -11,7 +11,15 @@ def profile(request):
     a = 5
 
     extra = request.user
-    pic = request.user.socialaccount_set.first().extra_data['picture']
+
+    social_acc = request.user.socialaccount_set.first()
+
+    if social_acc.provider == 'facebook':
+        pic = f"http://graph.facebook.com/{social_acc.uid}/picture?type=square"
+    elif social_acc.provider == 'google':
+        pic = social_acc.extra_data['picture']
+
+
     return render(request=request, template_name='core/profile.html', context={
         'user': request.user,
         'pic': pic
