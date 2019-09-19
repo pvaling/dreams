@@ -1,0 +1,44 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+{#<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>#}
+{#<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>#}
+{#<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-analytics.js"></script>#}
+
+
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCWReDq8-b9ZXygPaWix9bF1TM4jeI9f5k",
+        authDomain: "dreams-e1e71.firebaseapp.com",
+        databaseURL: "https://dreams-e1e71.firebaseio.com",
+        projectId: "dreams-e1e71",
+        storageBucket: "",
+        messagingSenderId: "26365639919",
+        appId: "1:26365639919:web:cb57f1a93ca105872c2f1a",
+        signInSuccessUrl: "/accounts/profile/"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    let ui = new firebaseui.auth.AuthUI(firebase.auth());
+    {#firebase.analytics();#}
+    ui.start('#firebaseui-auth-container', {
+        signInOptions: [
+            // List of OAuth providers supported.
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+            firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+            firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+            {#firebase.auth.TwitterAuthProvider.PROVIDER_ID,#}
+            {#firebase.auth.GithubAuthProvider.PROVIDER_ID#}
+        ],
+        signInSuccessUrl: 'accounts/profile/'
+        // Other config options...
+    });
+</script>
+

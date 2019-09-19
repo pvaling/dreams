@@ -24,4 +24,5 @@ urlpatterns = [
     path('dreams/', include('core.urls')),
     path('accounts/profile/', profile, name='profile'),
     path('accounts/', include('allauth.urls')),
+    path('api/', include('rest_api.urls')),
 ]

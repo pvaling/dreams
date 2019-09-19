@@ -1,0 +1,19 @@
+<head>
+    {% block header_scripts %}{% endblock %}
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    {% block content %}{% endblock %}
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        {% block footer_scripts %}{% endblock %}
+    </div>
+</body>
