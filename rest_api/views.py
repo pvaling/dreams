@@ -17,27 +17,27 @@ def feed(request):
      "match": '78',
      "description": 'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
      "message": 'I will go back to Gotham and I will fight men Iike this but I will not become an executioner.',
-     "image": '../images/01.jpg',
+     "image": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/02.jpg',
      "video": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/preroll.mp4'
     },
     {
      "id": 5,
      "name": 'Petr Valing',
      "match": '27',
-     "description":'Software developer, Wakeboarder, Musician. Dreaming about Norway yacht trip',
+     "description": 'Software developer, Wakeboarder, Musician. Dreaming about Norway yacht trip',
      "status": 'Offline',
      "message": "It's not who I am underneath but what I do that defines me.",
-     "image": '../images/11.jpg',
+     "image": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/11.jpg',
      "video": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/IMG_0891_comressed.mp4'
     },
     {
      "id": 2,
      "name": 'Clementine Bauch',
      "match": '93',
-     "description":'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+     "description": 'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
      "status": 'Offline',
      "message": "Someone like you. Someone who'll rattle the cages.",
-     "image": '../images/02.jpg'
+     "image": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/01.jpg'
     }
     ]
 
