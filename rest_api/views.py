@@ -42,3 +42,18 @@ def feed(request):
     ]
 
     return JsonResponse(feed_data, safe=False)
+
+
+def profile(request):
+    feed_data = {
+     "id": 5,
+     "name": 'Petr Valing',
+     "match": '27',
+     "description": 'Software developer, Wakeboarder, Musician. Dreaming about Norway yacht trip',
+     "status": 'Offline',
+     "message": "It's not who I am underneath but what I do that defines me.",
+     "image": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/11.jpg',
+     "video": 'https://dreams-videos.s3.eu-central-1.amazonaws.com/IMG_0891_comressed.mp4'
+    }
+
+    return JsonResponse(feed_data)
