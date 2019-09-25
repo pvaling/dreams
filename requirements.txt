@@ -4,3 +4,7 @@ djangorestframework
 django-allauth
 django_extensions
 django-sslserver
+boto3
+django-storages
+django-countries
+django-rest-auth

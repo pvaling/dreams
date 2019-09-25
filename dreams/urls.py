@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.authtoken.views import obtain_auth_token
 
 from core.views import profile, landing
 
@@ -25,4 +26,5 @@ urlpatterns = [
     path('accounts/profile/', profile, name='profile'),
     path('accounts/', include('allauth.urls')),
     path('api/', include('rest_api.urls')),
+    path('api-token-auth/', obtain_auth_token)
 ]
