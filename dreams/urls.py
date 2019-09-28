@@ -17,13 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token
 
-from core.views import profile, landing
+from core.views import profile, landing, firebase
 
 urlpatterns = [
     path('', landing, name='landing'),
     path('admin/', admin.site.urls),
     path('dreams/', include('core.urls')),
     path('accounts/profile/', profile, name='profile'),
+    path('accounts/firebase/', firebase, name='firebase'),
     path('accounts/', include('allauth.urls')),
     path('api/', include('rest_api.urls')),
     path('api-token-auth/', obtain_auth_token)

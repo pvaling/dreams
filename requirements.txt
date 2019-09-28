@@ -8,3 +8,4 @@ boto3
 django-storages
 django-countries
 django-rest-auth
+pyrebase

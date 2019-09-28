@@ -1,5 +1,6 @@
 import copy
 import uuid
+import random
 
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -73,7 +74,7 @@ def profile(request):
      "description": profile.description,
      "status": profile.get_presence_status,
      "message": "It's not who I am underneath but what I do that defines me.",
-     "image": profile.avatar.url if profile.avatar else None
+     "image": profile.avatar.url if profile.avatar else f"https://picsum.photos/id/{random.randint(100,800)}/600/800"
     }
 
     return JsonResponse(feed_data)
