@@ -9,3 +9,4 @@ django-storages
 django-countries
 django-rest-auth
 pyrebase
+psycopg2-binary

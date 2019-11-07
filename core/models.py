@@ -27,7 +27,7 @@ class Profile(models.Model):
     created_at = DateTimeField(auto_now_add=True)
     updated_at = DateTimeField(auto_now=True)
 
-    birth_year = models.fields.PositiveSmallIntegerField(max_length=4, null=True, blank=True)
+    birth_year = models.fields.PositiveSmallIntegerField(null=True, blank=True)
 
     description = models.fields.TextField(null=True, verbose_name='Description', blank=True)
 
